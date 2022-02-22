@@ -1,0 +1,40 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "name": "documents",
+      "type": "cosmosDB",
+      "databaseName": "mydatabase",
+      "collectionName": "visitcount",
+      "id" : "1",
+      "partitionKey": "1",
+      "connectionStringSetting": "MyAccount_COSMOSDB",
+      "direction": "in"
+    },
+    {
+      "name": "outdocument",
+      "type": "cosmosDB",
+      "databaseName": "mydatabase",
+      "collectionName": "visitcount",
+      "id" : "1",
+      "partitionKey": "1",
+      "connectionStringSetting": "MyAccount_COSMOSDB",
+      "direction": "out"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}

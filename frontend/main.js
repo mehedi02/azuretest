@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', (event) =>{
     getVisitCount()
 })
-
+// this for function Api
 const functionApiUrl = 'https://bs1054test.azurewebsites.net/api/azuretest?code=q9C3dzXtRZu7AKB7OP77qbbJOuQm823GneKFaAryFJDaEUYaw5d4Bg=='
 const localfunctionApi = 'http://localhost:7071/api/azuretest'
 
